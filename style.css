@@ -1,6 +1,6 @@
-/* ==========================================================
-   COLE ESTE BLOCO NO FINAL DO SEU ARQUIVO STYLES.CSS ATUAL
-   ========================================================== */
+/* ========================================================== */
+/* 1. SEU CÓDIGO DO MENU (Preservado)                         */
+/* ========================================================== */
 
 /* Ajusta o tamanho da imagem do dinheiro no topo */
 .nav-img {
@@ -32,4 +32,53 @@
 /* Remove margens antigas que possam forçar o menu para baixo */
 .nav.mt-5 {
   margin-top: 0 !important;
+}
+
+/* ========================================================== */
+/* 2. CORREÇÃO DE CENTRALIZAÇÃO E PROPORÇÕES (Adicionado)     */
+/* ========================================================== */
+
+/* Reset básico para evitar quebras */
+* {
+  box-sizing: border-box;
+}
+
+/* Força todo o esqueleto do Bootstrap a alinhar no centro da tela */
+.container {
+  max-width: 1140px !important; /* Largura perfeita para leitura */
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* Evita que QUALQUER imagem quebre o layout ou fique gigante */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Limita o tamanho da foto de Boas-vindas para não esmagar o texto */
+.img-inicio {
+  max-width: 400px !important;
+  width: 100% !important;
+}
+
+/* Seção de Biografia: Garante alinhamento vertical entre foto e texto */
+.secao-hungria .row {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Ajusta o fundo cinza da Galeria para não vazar nas laterais */
+.fundo-galeria {
+  background-color: #f8f9fa; /* Tom cinza claro acessível */
+  border-radius: 15px;
+}
+
+/* Ajusta a largura do formulário para não ficar gigante na tela */
+.formulario {
+  max-width: 600px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
 }
